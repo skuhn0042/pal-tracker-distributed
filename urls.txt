@@ -1,0 +1,6 @@
+https://registration-pal-sjk.apps.longs.pal.pivotal.io/users/1
+https://registration-pal-sjk.apps.longs.pal.pivotal.io/accounts?ownerId=1
+https://registration-pal-sjk.apps.longs.pal.pivotal.io/projects?accountId=1
+https://allocations-pal-sjk.apps.longs.pal.pivotal.io/allocations?projectId=1
+https://backlog-pal-sjk.apps.longs.pal.pivotal.io/stories?projectId=1
+https://timesheets-pal-sjk.apps.longs.pal.pivotal.io/time-entries?userId=1
