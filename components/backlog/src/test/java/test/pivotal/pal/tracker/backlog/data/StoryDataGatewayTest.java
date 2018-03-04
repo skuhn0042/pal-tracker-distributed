@@ -3,7 +3,7 @@ package test.pivotal.pal.tracker.backlog.data;
 import io.pivotal.pal.tracker.backlog.data.StoryDataGateway;
 import io.pivotal.pal.tracker.backlog.data.StoryFields;
 import io.pivotal.pal.tracker.backlog.data.StoryRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;

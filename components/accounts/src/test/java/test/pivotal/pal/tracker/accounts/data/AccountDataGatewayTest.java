@@ -2,7 +2,7 @@ package test.pivotal.pal.tracker.accounts.data;
 
 import io.pivotal.pal.tracker.accounts.data.AccountDataGateway;
 import io.pivotal.pal.tracker.accounts.data.AccountRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;

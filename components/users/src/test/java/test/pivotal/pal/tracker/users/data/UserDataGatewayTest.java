@@ -1,7 +1,7 @@
 package test.pivotal.pal.tracker.users.data;
 
 
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import io.pivotal.pal.tracker.users.data.UserDataGateway;
 import io.pivotal.pal.tracker.users.data.UserRecord;
 import org.junit.Before;

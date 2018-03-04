@@ -3,12 +3,12 @@ package test.pivotal.pal.tracker;
 
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.PathNotFoundException;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import test.pivotal.pal.tracker.support.ApplicationServer;
-import test.pivotal.pal.tracker.support.HttpClient;
+import test.pivotal.pal.tracker.support.HttpClient2;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Fail.fail;
@@ -16,7 +16,7 @@ import static test.pivotal.pal.tracker.support.MapBuilder.jsonMapBuilder;
 
 public class FlowTest {
 
-    private final HttpClient httpClient = new HttpClient();
+    private final HttpClient2 httpClient = new HttpClient2();
     private final String workingDir = System.getProperty("user.dir");
 
     private ApplicationServer registrationServer = new ApplicationServer(workingDir + "/../applications/registration-server/build/libs/registration-server.jar", "8883");
@@ -40,7 +40,7 @@ public class FlowTest {
         return "http://localhost:8884" + path;
     }
 
-    private long findResponseId(HttpClient.Response response) {
+    private long findResponseId(HttpClient2.Response response) {
         try {
             return JsonPath.parse(response.body).read("$.id", Long.class);
         } catch (PathNotFoundException e) {
@@ -61,7 +61,7 @@ public class FlowTest {
         backlogServer.startWithDatabaseName("tracker_backlog_test");
         timesheetsServer.startWithDatabaseName("tracker_timesheets_test");
         ApplicationServer.waitOnPorts("8881", "8882", "8883", "8884");
-        TestScenarioSupport.clearAllDatabases();
+        TestScenarioSupport2.clearAllDatabases();
     }
 
     @After
@@ -74,7 +74,7 @@ public class FlowTest {
 
     @Test
     public void testBasicFlow() throws Exception {
-        HttpClient.Response response;
+        HttpClient2.Response response;
 
         response = httpClient.get(registrationServerUrl("/"));
         assertThat(response.body).isEqualTo("Noop!");

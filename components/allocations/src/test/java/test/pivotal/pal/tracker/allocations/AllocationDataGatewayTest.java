@@ -3,7 +3,7 @@ package test.pivotal.pal.tracker.allocations;
 import io.pivotal.pal.tracker.allocations.data.AllocationDataGateway;
 import io.pivotal.pal.tracker.allocations.data.AllocationFields;
 import io.pivotal.pal.tracker.allocations.data.AllocationRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -1,6 +1,6 @@
 package test.pivotal.pal.tracker.timesheets;
 
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import io.pivotal.pal.tracker.timesheets.data.TimeEntryDataGateway;
 import io.pivotal.pal.tracker.timesheets.data.TimeEntryFields;
 import io.pivotal.pal.tracker.timesheets.data.TimeEntryRecord;

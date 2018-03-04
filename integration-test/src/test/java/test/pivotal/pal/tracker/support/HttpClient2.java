@@ -6,7 +6,7 @@ import okhttp3.*;
 import java.io.IOException;
 import java.util.Map;
 
-public class HttpClient {
+public class HttpClient2 {
 
     private static final MediaType JSON = MediaType.parse("application/json");
 

@@ -3,7 +3,7 @@ package test.pivotal.pal.tracker.projects;
 import io.pivotal.pal.tracker.projects.data.ProjectDataGateway;
 import io.pivotal.pal.tracker.projects.data.ProjectFields;
 import io.pivotal.pal.tracker.projects.data.ProjectRecord;
-import io.pivotal.pal.tracker.testsupport.TestScenarioSupport;
+import io.pivotal.pal.tracker.testsupport.TestScenarioSupport2;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
